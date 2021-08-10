@@ -4,13 +4,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
+body {
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+h1,h2,h3, .menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+h3, .menu {
+    font-weight: 400;
+}
+header,main {
+     width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
 
 /* header */
 header {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 40px 17px;
+    padding: 32px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,10 +43,199 @@ h1 {
     justify-content: center;
 }
 .menu li {
-    margin: 0 15px;
+    margin-left: 55px; 
 }
 .menu a {
     color: #95E1D3;
     text-decoration: none;
     text-transform: uppercase;
 }
+.section-title {
+    text-align: center;
+}
+.uptitle {
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+line-height: 35px;
+color: #333333;
+}
+.section-title h2 {
+    font-size: 30px;
+line-height: 37px;
+font-variant: small-caps;
+margin-top: 20px;
+margin-bottom: 40px;
+}
+.section-title hr {
+    width: 60px;
+    height: 4px;
+    background: #F38181;
+    border: none;
+    margin: 0 auto;
+}
+.section-title p {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    
+}
+/* .benefits  {
+    padding: 65px;
+    width: 1168px;
+    height: 253px;
+    left: 390px;
+    top: 331px;
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+.benefits li {
+    margin: 74px;
+    width: 327.78px;
+    height: 74px;
+    left: 390px;
+    top: 331px;
+    
+
+}
+li img {
+    width: 37.8px;
+    height: 37px;
+    left: 390px;
+    top: 331px;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+.benefits p {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 22px;
+    color: #B6B6B6;
+    width: 275.78px;
+    height: 37px;
+    left: 442px;
+    top: 368px;
+} */
+.benefits {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 65px;
+    
+}
+.benefits li {
+    width: 33.33%;
+    margin-bottom: 100px;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    align-items: flex-start;
+
+}
+.benefits img {
+    margin-right: 20px;
+
+}
+.benefits h3 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+.benefits p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #B6B6B6;
+}
+.members {
+    display: flex;
+    text-align: center;
+    
+}
+.member-item {
+    margin-right: 30px;
+}
+.member-item:last-child {
+    margin-right: 0;
+}
+.member-item img {
+    width: 100%;
+    display: block;
+}
+/* .member-item {
+    display: block;     
+}
+.member-item::before {
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 470px; 
+}
+
+.member-item:hover::before {
+    background: linear-gradient(180deg, rgba(239, 139, 138, 0.8) 0%, rgba(229, 207, 130, 0.8) 100%);
+} */
+.member-photo {
+    position: relative;
+}
+.member-photo::before {
+  content: ''; 
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: linear-gradient(180deg, rgba(239, 139, 138, 0.8) 0%, rgba(229, 207, 130, 0.8) 100%);
+  opacity: 0;
+  transition: opacity .5s;
+}
+.member-photo:hover::before {
+    opacity: 1;
+
+}
+.social {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: calc(50% - 28px);
+    left: calc(50% - 10px);
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity .5s;
+   
+}
+
+.member-photo:hover .social {
+    opacity: 1;
+}
+.social li {
+    width: 57px;
+    height: 57px;
+    background-color:  #FCE38A;
+    margin-right: 1px;
+    transition: background-color .5s;
+    
+}
+.social a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.social img {
+    height: 26px;
+}
+.social li:hover {
+    background-color: #95E1D3;
+
+}
+
