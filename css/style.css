@@ -53,11 +53,12 @@ h1 {
 .section-title {
     text-align: center;
 }
+
 .uptitle {
     font-family: 'Kaushan Script';
     font-size: 24px;
-line-height: 35px;
-color: #333333;
+    line-height: 35px;
+    color: #333333;
 }
 .section-title h2 {
     font-size: 30px;
@@ -74,12 +75,13 @@ margin-bottom: 40px;
     margin: 0 auto;
 }
 .section-title p {
+   
     margin-top: 45px;
     margin-bottom: 30px;
     font-size: 15px;
     line-height: 18px;
     text-align: center;
-    
+ 
 }
 /* .benefits  {
     padding: 65px;
@@ -239,3 +241,49 @@ h3 {
 
 }
 
+
+
+footer {
+   
+  display: flex;
+  justify-content: center;
+  padding: 91px;
+  
+}
+
+footer p {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 17px;
+    width: 297px;
+    height: 17px;
+    left: 360px;
+    top: 1581px;
+    text-align: center;
+    color: #333333;
+    margin-right: 560px;
+}
+footer a:hover {
+    color: #F38181;
+
+}
+ input {
+    width: 230px;
+    height: 39px;
+    border: 1px solid #B6B6B6;
+}
+.form input {
+width: 150px;
+height: 40px;
+top: 10px;
+background:  #95E1D3;
+
+font-family: Montserrat;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+font-variant: small-caps;
+color: #FFFFFF;
+
+}
