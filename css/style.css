@@ -20,7 +20,8 @@ h1,h2,h3, .menu {
 h3, .menu {
     font-weight: 400;
 }
-header,main {
+header,main,
+footer {
      width: 1200px;
     max-width: 100%;
     margin: 0 auto;
@@ -49,6 +50,12 @@ h1 {
     color: #95E1D3;
     text-decoration: none;
     text-transform: uppercase;
+}
+.menu a:hover {
+    color: #F38181;
+    border-bottom: 3px solid #F38181 ;
+    padding-bottom: 10px;
+    transition: .3s;
 }
 .section-title {
     text-align: center;
@@ -82,6 +89,16 @@ margin-bottom: 40px;
     line-height: 18px;
     text-align: center;
  
+}
+.text {
+    font-family: Roboto;
+
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #B6B6B6;
+
 }
 /* .benefits  {
     padding: 65px;
@@ -157,6 +174,9 @@ h3 {
     font-size: 15px;
     line-height: 22px;
     color: #B6B6B6;
+}
+.team {
+    padding-bottom: 80px;
 }
 .members {
     display: flex;
@@ -243,7 +263,7 @@ h3 {
 
 
 
-footer {
+/* footer {
    
   display: flex;
   justify-content: center;
@@ -264,26 +284,125 @@ footer p {
     margin-right: 560px;
 }
 footer a:hover {
-    color: #F38181;
+    color: #F38181; */
 
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #B6B6B6;
+    align-items: center;
 }
- input {
-    width: 230px;
-    height: 39px;
+
+footer p {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+footer a {
+    color:  #F38181;
+    
+}
+footer input {
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+form {
+    display: flex;
+}
+
+input[type=email] {
     border: 1px solid #B6B6B6;
+    border-right: 0 ;
+
 }
-.form input {
-width: 150px;
-height: 40px;
-top: 10px;
-background:  #95E1D3;
+input[type=email]::placeholder {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B6B6B6;
 
-font-family: Montserrat;
-font-weight: bold;
-font-size: 14px;
-line-height: 17px;
-text-align: center;
-font-variant: small-caps;
-color: #FFFFFF;
+}
+.btn {
+    width: 150px;
+     border-radius: 0;
+     border: none;
+    background: #95E1D3;
 
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    font-variant: small-caps;
+    color: #FFFFFF; 
+}
+/* responsive */
+@media (max-width: 1200px) {
+    header,footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }  
+}
+
+@media (max-width: 768px) {
+   .menu {
+       display: none;
+
+   } 
+   .benefits li {
+       width: 50%;
+   }
+   .team {
+    padding-bottom: 0;
+}
+   .text {
+       padding-left: 15px;
+       padding-right: 15px;
+   }
+   .members {
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   .member-item {
+       width: 50%;
+       margin-right: 0;
+       margin-bottom: 30px;
+       padding: 0 15px;
+       
+   }
+   footer {
+   flex-direction: column-reverse; 
+}
+
+}
+@media (max-width: 768px) {
+    .benefits li {
+        width: 100%;
+        margin-bottom: 50px;
+    } 
+    .member-item {
+        width: 100%;
+    }
+    
+}
+@media (max-width: 320px) {
+    form {
+        flex-direction: column;
+        width: 100%;
+    }
+    form input,.btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    input[type=email] {
+        border-right:1px solid #B6B6B6; ;
+    }
+    
 }
